@@ -1,4 +1,282 @@
 /* general */
-body{
-	background-color: gray;
+body, testarea{
+	margin: 0;
+	font-family: 'montserrat', Arial, Helvetica, sans-serif;
+	background-color: rgb(255, 255, 255);
+}
+h1, h2, h3{
+	color: #333;
+}
+p{
+	color: #70747A;
+}
+/* navBar */
+.navbar-container{
+	width: 100%;
+	height: 80px;
+	background-color: #232a31;
+	padding: 0 2em;
+	position: relative;
+	box-sizing: border-box;
+}
+.logo{
+	width: 50px;
+	margin-top: 15px;
+}
+nav{
+	position: relative;
+}
+.navbar-items{
+	list-style: none;
+	position: absolute;
+	display: inline-block;
+	height: 80px;
+	line-height: 80px;
+	margin: 0;
+	right: 0;
+}
+.navbar-items li{
+	display: inline-block;
+	text-transform: uppercase;
+	margin-left: 25px;
+}
+.navbar-items li a{
+	color: #fff;
+	text-decoration: none;
+	transition: .5s;
+
+}
+.navbar-items li a:hover{
+	background-color:#269c4f;
+}
+.default-btn{
+	background-color: #2cc76a;
+	border-radius: 5px;
+	padding: 15px 20px;
+}
+.default-btn:hover{
+	color: #fff;
+	background-color: #1dbd5d;
+}
+/* mini banner */
+.main-banner{
+	background-image: url('./img/mainbanner.png');
+	background-size: cover;
+	background-position: center;
+	padding: 10em 0;
+	position: relative;
+
+
+}
+.main-banner h1, .main-banner p{
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+
+}
+.main-banner h1{
+	font-size: 54px;
+}
+.main-banner p{
+	font-size: 20px;
+}
+/* sem flexbox agora com flex-box.... */
+/* especialidades */
+.specialties-container{
+	padding: 5em 0;
+}
+.specialties-container ul{
+	display: flex;
+	width: 90%;
+	position: relative;
+	margin: auto;
+	padding-left: 0;
+}
+.specialties-container ul li{
+	list-style: none;
+	text-align: center;
+
+}
+.fas{
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+.fa-shield-alt{
+	color: #2cc76a;
+}
+.fa-rocket{
+	color: rgb(170, 14, 14);
+}
+.fa-comments{
+	color: orange;
+}
+li h3{
+	color: #333;
+	margin-bottom: 25px;
+
+}
+li p{
+	line-height: 23px;
+}
+/* preços; */
+.pricing-container{
+	border-radius: 20px;
+	background-color: rgba(163, 160, 160, 0.096);
+	padding-bottom: 5em;
+	text-align: center;
+}
+.plans-container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.plan{
+	width: 300px;
+	grid-row: 1;
+	max-width: 275px;
+	margin: 0px 30px;
+}
+.plan ul{
+	padding: 0;
+}
+.plan li{
+	list-style: none;
+	padding: 20px;
+	background-color: #e8e9ea;
+}
+.plan .price{
+	font-weight: bold;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #2cc762;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin: auto;
+	margin-bottom: -50px;
+}
+.plan .plan-name{
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #202b34;
+	padding: 60px 0px 10px 0;
+}
+.plan .plan-btn{
+	padding: 24px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color:#2cc762;
+	cursor: pointer;
+	transition: .5s;
+}
+.plan .plan-btn:hover{
+	background-color:#269c4f;
+}
+.plan .recommended{
+	background-color: rgb(170, 14, 14);
+}
+.pricing-container h1{
+	font-size: 40px;
+}
+/* buscar domínioss */
+
+.searchdomain-container {
+	background-color: #34454e;
+	text-align: center;
+	padding: 5em 0;
+}
+
+.searchdomain-container h2 {
+	color: #FFF;
+	font-size: 42px;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.searchdomain-container p {
+	color: #D5D5D5;
+	font-size: 24px;
+	margin-bottom: 25px;
+}
+
+.searchdomain-container input {
+	display: block;
+	position: relative;
+	margin: auto;
+	border: none;
+	border-radius: 5px;
+}
+
+.searchdomain-container input[type=text] {
+	margin-bottom: 25px;
+	width: 60%;
+	padding: 20px;
+	font-size: 20px;
+}
+
+.searchdomain-container input[type=submit] {
+	background-color: #2cc76a;
+	padding: 15px 30px;
+	color: #FFF;
+	font-size: 24px;
+}
+
+/* contato */
+
+.contact-container {
+	text-align: center;
+	padding-top: 5em;
+	padding-bottom: 2em;
+}
+
+.contact-container h2 {
+	font-size: 36px;
+}
+
+.contact-container p {
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+
+.contact-container input, .contact-container textarea {
+	width: 200px;
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid #CCC;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+
+.contact-container textarea {
+	display: block;
+	position: relative;
+	margin: auto;
+	width: 468px;
+	height: 150px;
+}
+
+.contact-container input[type=submit] {
+	display: block;
+	position: relative;
+	margin: auto;
+	background-color: #2cc76a;
+	color: #FFF;
+}  */
+
+/* footer */
+
+footer {
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 50px;
 }
