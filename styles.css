@@ -1,5 +1,5 @@
 /* general */
-body, testarea{
+body, textarea{
 	margin: 0;
 	font-family: 'montserrat', Arial, Helvetica, sans-serif;
 	background-color: rgb(255, 255, 255);
